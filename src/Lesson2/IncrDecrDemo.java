@@ -6,7 +6,6 @@ public class IncrDecrDemo {
 
         x = 2;
         y = -45;
-
         x = x + 1;
         System.out.println("did x = x+1, now x is " +x);
         x++;

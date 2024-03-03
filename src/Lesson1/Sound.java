@@ -1,3 +1,5 @@
+package Lesson1;
+
 class Sound {
 
     public static void main(String args[]) {

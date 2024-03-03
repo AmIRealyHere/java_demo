@@ -3,7 +3,6 @@ package Lesson2;
 public class ShortHandOrSideEffects {
     public static void main(String[] args) {
         int i;
-
         i = 0;
 
         if(false && (++i < 100))

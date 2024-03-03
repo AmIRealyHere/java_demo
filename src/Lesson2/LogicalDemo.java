@@ -21,7 +21,5 @@ public class LogicalDemo {
         if (answer2.equalsIgnoreCase("yes") && answer.equalsIgnoreCase("yes")) System.out.println("Congrats");
         else System.out.println("Do you want to work with us?");
 
-
-
     }
 }
