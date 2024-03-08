@@ -6,8 +6,8 @@ public class HWTable {
         printOrTable();
         printNotTable();
     }
-
-    private static void printAndTable() {
+// 0 is false and 1 is true
+    public static void printAndTable() {
         System.out.println("AND Operator Table:");
         System.out.println("P\t|\tQ\t|\tP AND Q");
         System.out.println("---\t|\t---\t|\t---");
@@ -18,7 +18,7 @@ public class HWTable {
         System.out.println();
     }
 
-    private static void printOrTable() {
+    public static void printOrTable() {
         System.out.println("OR Operator Table:");
         System.out.println("P\t|\tQ\t|\tP OR Q");
         System.out.println("----|\t----|\t-----");
@@ -28,7 +28,7 @@ public class HWTable {
         printLine(1, 1);
         System.out.println();
     }
-    private static void printNotTable() {
+    public static void printNotTable() {
         System.out.println("NOT Operator Table:");
         System.out.println("P\t|\tNOT P");
         System.out.println("---\t|\t---");
@@ -37,12 +37,12 @@ public class HWTable {
         System.out.println();
     }
 
-    private static void printLine(int p, int q) {
+    public static void printLine(int p, int q) {
         System.out.println(p + "\t|\t" + q + "\t|\t" + (p & q));
         System.out.println("---\t|----\t|\t---");
     }
 
-    private static void printNotLine(int p) {
+    public static void printNotLine(int p) {
         System.out.println(p + "\t|\t" + (p == 0 ? 1 : 0));
         System.out.println("---\t|\t---");
     }
