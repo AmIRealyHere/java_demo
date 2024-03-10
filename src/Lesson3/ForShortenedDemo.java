@@ -8,7 +8,7 @@ public class ForShortenedDemo {
             i++;
         }
         int sum = 0;
-        for (i = 1; i<=5; sum += i ++)
+        for (i = 1; i<=5; sum += i++ )
         {
             System.out.println("current sum & i: " + sum  + " & " +i);
         };
