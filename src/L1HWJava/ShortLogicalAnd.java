@@ -7,11 +7,10 @@ public class ShortLogicalAnd {
         int divisor = 0;
 
         if (divisor != 0 && numerator % divisor == 0) {
-            int result = numerator / divisor;
+        int result = numerator / divisor;
             System.out.println("Division result: " + result);
         } else {
             System.out.println("Division by zero or divisor is zero.");
         }
-
     }
 }
