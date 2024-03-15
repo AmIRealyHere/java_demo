@@ -3,7 +3,6 @@ package Lesson3;
 public class ForDemo {
     public static void main(String[] args) {
 
-
         double num, sqroot, rerr;
 
         for (num = 1.0; num < 100.00; num++) {

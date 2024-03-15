@@ -12,8 +12,6 @@ public class ForDynDemo {
             System.out.println("Run #" + i);
             Scanner input = new Scanner(System.in);
             result = input.nextLine().charAt(0);
-
-
-
     }
-}}
+}
+}

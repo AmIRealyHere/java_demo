@@ -9,8 +9,6 @@ public class InputOutputSystemRead {
         char ch = (char) System.in.read();
 
         System.out.println("You have pressed: " +ch);
-
-
     }
 }
 
