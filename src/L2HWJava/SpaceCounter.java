@@ -1,23 +1,34 @@
 package L2HWJava;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class SpaceCounter {
 
-    public static void main(String[] args) {
-        System.out.println("Press '.' to stop the program.");
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String input;
-            while ((input = reader.readLine()) != null) {
-                if (input.contains(".")) {
-                    System.out.println("Program stopped.");
-                    break;
-                }
+        System.out.println("Enter characters. Press . (period) to terminate the program.");
+
+        int spaceCount = 0;
+        StringBuilder inputBuilder = new StringBuilder();
+
+        while (true) {
+            String input = scanner.nextLine();
+            inputBuilder.append(input);
+
+            if (input.endsWith(".")) {
+                break;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+
+        for (char ch : inputBuilder.toString().toCharArray()) {
+            if (ch == ' ') {
+                spaceCount++;
+            }
+        }
+
+        System.out.println("Space count: " + spaceCount);
+        System.out.println("Program terminated.");
+        scanner.close();
     }
 }
