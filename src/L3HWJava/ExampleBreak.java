@@ -3,28 +3,37 @@ package L3HWJava;
 public class ExampleBreak {
     public static void main(String[] args) {
 
-        int x = 1; // Placeholder for the value of x
-        int y = 3;
+        int x = 0; // Placeholder for the value of x
+        int y = 0;
+
+        // Define the boolean variable outside the loop
+        boolean running;
 
         for (int i = 0; i < 10; i++) {
-            boolean running = true;
+            running = true; // Initialize running to true for each iteration of the outer loop
 
             while (running) {
-                if (x == 2) {
-                    running = false;
+                if (x < y) {
                     break;
                 }
-
-                // Perform some actions like x + y
+                // Perform some actions inside the while loop
+                // For example, calculate the sum of x and y
                 int sum = x + y;
-                System.out.println("After while: " + sum);
+                System.out.println("Sum of x and y: " + sum);
 
                 // Update x and y, for example
                 x++;
                 y--;
+
+                // Update the running variable based on some condition
+                running = false; // For example, you may want to update running based on certain conditions
             }
 
-            System.out.println("After for" +y);
+            // Actions after the while loop
+            System.out.println("After while");
         }
+
+        // Actions after the for loop
+        System.out.println("After for");
     }
 }
