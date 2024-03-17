@@ -3,7 +3,7 @@ package Lesson4;
 public class BreakLabelDemo {
     public static void main(String[] args) {
         int i;
-
+        zero:
         for (i = 1; i <4 ; i++){
             one: {
                 two: {
@@ -11,7 +11,7 @@ public class BreakLabelDemo {
                         System.out.println("\n i equals " + i);
                         if (i==1) break one;
                         if (i==2) break two;
-                        if (i==3) break three;
+                        if (i==3) break zero;
 
                         System.out.println("This line will never be displayed");
                     }

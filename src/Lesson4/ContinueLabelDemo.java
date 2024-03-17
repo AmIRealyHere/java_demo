@@ -9,6 +9,7 @@ public class ContinueLabelDemo {
                 if (j == 5) continue outerloop;
                 System.out.print(j + "  ");
             }
+
         }
     }
 }

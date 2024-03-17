@@ -1,17 +1,17 @@
 package Lesson5;
 
-public class Power {
+public class Pwr {
     double b;
     int e;
     double val;
 
-    Power (double base, int exp) {
-        b = base;
-        e = exp;
+    Pwr (double b, int e) {
+        this.b = b;
+        this.e = e;
 
         val = 1;
-        if (exp ==0) return;
-        for ( ; exp > 0 ; exp --) val = val * base;
+        if (e ==0) return;
+        for ( ; e > 0 ; e --) val = val * b;
     }
     double get_pwr () {
         return val;
