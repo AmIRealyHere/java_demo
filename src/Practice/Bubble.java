@@ -8,7 +8,7 @@ public class Bubble {
 
         size = 10;
 
-        System.out.print("Original Massive: ");
+        System.out.print("Original Array: ");
         for (int i=0; i < size; i ++)
             System.out.print(" " + nums[i] );
         System.out.println();
@@ -21,7 +21,7 @@ public class Bubble {
                 nums[b] = t;
             }
         }
-        System.out.print("Sorted Massive: ");
+        System.out.print("Sorted Array: ");
         for (int i = 0; i < size; i++)
             System.out.print(" " + nums[i]);
         System.out.println();
