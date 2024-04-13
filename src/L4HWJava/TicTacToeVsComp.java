@@ -26,7 +26,7 @@ public class TicTacToeVsComp {
             System.out.println("You chose to play as '" + currentPlayer + "'.");
         } else {
             System.out.println("Invalid choice. Defaulting to 'X'.");
-            currentPlayer = 'X'; // Default to 'X' if invalid choice
+            currentPlayer = 'X';
         }
     }
 
@@ -69,20 +69,17 @@ public class TicTacToeVsComp {
                     System.out.println("Invalid move. Try again.");
                 }
             }
-
             System.out.println("It's a tie!");
         }
 
-        public boolean isValidMove(int move) {
+        public boolean isValidMove(int move){
             return move >= 0 && move < 9 && board[move] == ' ';
-        }
-
+            }
         public void makeMove(int move) {
             board[move] = currentPlayer;
-        }
-
-        public boolean currentPlayerWins() {
-            for (int i = 0; i < 9; i += 3) {
+            }
+        public boolean currentPlayerWins(){
+            for (int i = 0; i < 9; i += 3){
                 if (board[i] == currentPlayer && board[i + 1] == currentPlayer && board[i + 2] == currentPlayer) {
                     return true;
                 }
@@ -104,12 +101,9 @@ public class TicTacToeVsComp {
             }
             return true;
         }
-
         public static void main(String[] args) {
             TicTacToeVsComp game = new TicTacToeVsComp();
             game.displayBoard();
             game.playGame();
         }
     }
-
-

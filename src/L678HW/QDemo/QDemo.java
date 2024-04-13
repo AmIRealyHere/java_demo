@@ -1,4 +1,4 @@
-package L678HW;
+package L678HW.QDemo;
 
 import Practice.Queue;
 

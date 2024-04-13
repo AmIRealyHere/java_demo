@@ -1,2 +1,6 @@
-package Lesson12.bookpack;public interface Swimable {
+package Lesson12;
+
+public interface Swimable {
+
+    void swim();
 }

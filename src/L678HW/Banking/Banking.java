@@ -1,9 +1,9 @@
 package L678HW.Banking;
 
-public class BankingSystem {
+public class Banking {
     public static void main(String[] args) {
-        Client client1 = new Client("John Doe", 1);
-        Client client2 = new Client("Jane Smith", 2);
+        Client client1 = new Client("Wasea Pupkin", 1);
+        Client client2 = new Client("Wasilisa Pumpkin", 2);
 
         CurrentAccount currentAccount = new CurrentAccount(client1, 500);
         SavingsAccount savingsAccount = new SavingsAccount(client2, 2.5);

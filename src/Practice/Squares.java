@@ -3,7 +3,7 @@ package Practice;
 public class Squares {
     public static void main(String args[]) {
 
-    int sqrs[][] = {
+    int squares[][] = {
             {1, 1},
             {2, 4},
             {3, 9},
@@ -18,7 +18,7 @@ public class Squares {
     int i, j;
     for ( i=0; i< 10; i++) {
       for (j = 0; j < 2; j++)
-            System.out.print(sqrs[i][j] + " ");
+            System.out.print(squares[i][j] + " ");
         System.out.println();
     }
 }

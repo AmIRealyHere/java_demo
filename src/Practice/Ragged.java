@@ -27,7 +27,7 @@ public class Ragged {
         }
         System.out.println();
         System.out.println("Number of pax transported in every" +
-                "ride, in wekends:");
+                "ride, in weekends:");
         for (i = 5; i < 7; i++) {
             for (j = 0; j < 2; j++)
                 System.out.print(riders[i][j] + " ");

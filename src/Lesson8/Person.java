@@ -16,19 +16,15 @@ public class Person {
         password = in.nextLine();
     }
 
-    public int getAge() {
-        return age;
-    }
-//    public void setAge(int age){
-//        System.out.println("Enter password first:");
-//        Scanner in = new Scanner(System.in);
-//        String password = in.nextLine();
-//        if (password.equals(this.password))
-//        this.age = age < 18 ? 0 : age;
-//
-//
-//    }
-//    public int getAge(){
-//        return age;
-    }
+        public void setAge(int age) {
+            System.out.println("Enter password first:");
+            Scanner in = new Scanner(System.in);
+            String password = in.nextLine();
+            if (password.equals(this.password))
+                this.age = age < 18 ? 0 : age;
 
+        }
+        public int getAge() {
+                return age;
+            }
+    }

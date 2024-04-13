@@ -1,4 +1,4 @@
-package Lesson12.bookpack;
+package Lesson12;
 
 public class AccessModifierDemonstrator {
     public int a; // from everywhere
