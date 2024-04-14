@@ -2,9 +2,9 @@ package Lesson11;
 
 public class ErrorMessage {
     static final  int OUTERR = 0;
-    final int INNERR = 0;
-    final int DISKERR = 0;
-    final int INDEXERR = 0;
+    final int INNERR = 1;
+    final int DISKERR = 2;
+    final int INDEXERR = 3;
 
     String msgs[] = {
             "Output Error",

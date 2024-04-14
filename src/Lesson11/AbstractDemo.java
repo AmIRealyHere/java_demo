@@ -17,7 +17,7 @@ public class AbstractDemo {
         ErrorMessage err = new ErrorMessage();
 
         System.out.println(err.getErrorMessage(err.DISKERR));
-        System.out.println(err.getErrorMessage(err.OUTERR));
+        System.out.println(err.getErrorMessage(ErrorMessage.OUTERR));
         System.out.println(err.getErrorMessage(err.INNERR));
 
     }
