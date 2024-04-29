@@ -1,4 +1,4 @@
-package Mosh;
+package Mosh.List;
 
 import java.util.ArrayList;
 import java.util.Collections;

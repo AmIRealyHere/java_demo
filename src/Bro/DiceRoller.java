@@ -1,8 +1,8 @@
 package Bro;
-
 import java.util.Random;
 
 public class DiceRoller {
+
 
 //    DiceRoller() {
 //        Random random = new Random();
@@ -13,16 +13,16 @@ public class DiceRoller {
 //         number = random.nextInt(6) +1;
 //        System.out.println(number);
 
-    Random random;
-    int number =0;
-    
-    DiceRoller() {
-        Random random = new Random();
-        roll();
-    }
-    void roll() {
-        number = random.nextInt(6) +1;
-        System.out.println(number);
+        Random random;
+        int number;
 
+        DiceRoller() {
+            random = new Random();
+            roll();
+        }
+        void roll () {
+            number = random.nextInt(6) + 1;
+            System.out.println(number);
+
+        }
     }
-}

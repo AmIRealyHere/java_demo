@@ -7,6 +7,12 @@ public class Car {
     String color = "Blue";
     double price = 50000.00;
 
+    public String toString(){
+//        String myString = make +"\n"+model+"\n"+color+"\n"+year;
+//        return myString;
+        return make +"\n"+model+"\n"+color+"\n"+year;
+
+    }
     void drive(){
         System.out.println("You drive the car");
     }
