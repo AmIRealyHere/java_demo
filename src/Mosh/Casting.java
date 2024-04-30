@@ -13,6 +13,5 @@ public class Casting {
         String w = "1.1";
         double z = Double.parseDouble(w) +2;
         System.out.println(y);
-
     }
 }

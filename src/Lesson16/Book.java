@@ -110,11 +110,11 @@ public class Book implements Comparable<Book>{
         Book book = (Book) o;
         return getYearOfPublication() == book.getYearOfPublication() && isTranslated() == book.isTranslated() && getGenre() == book.getGenre() && Objects.equals(getName(), book.getName()) && Objects.equals(getAuthor(), book.getAuthor());
     }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(getName(), getAuthor(), getGenre(), getYearOfPublication(), isTranslated());
-//    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getAuthor(), getGenre(), getYearOfPublication(), isTranslated());
+    }
 
     @Override
     public String toString() {
