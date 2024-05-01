@@ -9,13 +9,13 @@ public class LinkedListDemo {
     public static void main(String[] args) {
         LinkedList<Book> library = new LinkedList<>();
         LimitedLinkedList<Book> limitedLibrary = new LimitedLinkedList<>(8);
-        Book a = new Book("Smith", "A Somebody", (short) 1066, Book.Genre.HORROR);
+        Book a = new Book("ASmith", "A Somebody", (short) 1066, Book.Genre.HORROR);
         Book b = new Book("BSmith", "Be Somebody", (short) 1766);
         Book c = new Book("CSmith", "Cat Somebody", (short) 1868);
         Book d = new Book("DSmith", "Do Somebody", (short) 2006);
         Book e = new Book("ESmith", "Eat Somebody", (short) 2006);
         Book f = new Book("FSmith", "Fun Somebody", (short) 1006, Book.Genre.ROMANCE);
-        Book g = new Book("GSmith");
+        Book g = new Book("GUnknown");
 
         List<Book> list = Arrays.asList(g,a,b,c,d,e,g,f);
         library.addAll(list);

@@ -36,6 +36,9 @@ public class Book implements Comparable<Book>{
         this(name, author, yearOfPublication);
         this.genre = genre;
     }
+    public Book(String name, int numberOfPages){
+        this.numberOfPages= numberOfPages;
+    }
 
     public Genre getGenre() {
         return genre;
@@ -98,7 +101,7 @@ public class Book implements Comparable<Book>{
 
     @Override
     public int compareTo(Book o) {
-        if (getAge()< o.getAge()) return 1;
+        if (getAge() < o.getAge()) return 1;
         else if (getAge() > o.getAge()) return -1;
         return 0;
     }

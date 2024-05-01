@@ -1,6 +1,5 @@
 package Lesson16;
 
-
 import java.util.*;
 
 public class ArrayListDemo {
@@ -48,9 +47,9 @@ public class ArrayListDemo {
 //        library.removeIf(n -> (n.getYearOfPublication()<1980));
         Comparator<Book> nameComparator = Comparator.comparing(Book::getName);
         library.sort(nameComparator);
-     Collections.sort(library);
+        Collections.sort(library);
 
-        System.out.println("\nOUR LIBRARY");
+        System.out.println("\nSORTED LIBRARY");
         for (Book item : library){
             System.out.println(item);
         }
