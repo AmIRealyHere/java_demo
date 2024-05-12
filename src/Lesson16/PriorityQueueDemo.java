@@ -34,15 +34,21 @@ public class PriorityQueueDemo {
         System.out.println("hospitalQueueByAge.peek(): " + hospitalQueueByAge.peek());
         System.out.println("hospitalQueueBySeverity.peek(): " +hospitalQueueBySeverity.peek());
 
-        System.out.println("\nhospitalQueueByAge");
-        Iterator<Patient> it = hospitalQueueByAge.iterator();
-        while (it.hasNext()){
-            System.out.println(it.next());
+//        System.out.println("\nhospitalQueueByAge");
+//        Iterator<Patient> it = hospitalQueueByAge.iterator();
+//        while (it.hasNext()){
+//            System.out.println(it.next());
+//        }
+//        System.out.println("\nhospitalQueueBySeverity");
+//        Iterator<Patient> it1 = hospitalQueueBySeverity.iterator();
+//        while (it1.hasNext()){
+//            System.out.println(it1.next());
+//        }
+        System.out.println("\nhospitalQueueByOrder");
+        while (!hospitalQueueByAge.isEmpty()){
+            System.out.println(hospitalQueueByAge.poll());
         }
-        System.out.println("\nhospitalQueueBySeverity");
-        Iterator<Patient> it1 = hospitalQueueBySeverity.iterator();
-        while (it1.hasNext()){
-            System.out.println(it1.next());
-        }
+        System.out.println(newPatient0.compareTo(newPatient1));
+        System.out.println(newPatient1.compareTo(newPatient2));
     }
 }

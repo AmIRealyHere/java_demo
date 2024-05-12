@@ -1,2 +1,5 @@
-package Lesson17;public interface StringFuction {
+package Lesson17;
+
+public interface StringFunction {
+    String run(String str);
 }

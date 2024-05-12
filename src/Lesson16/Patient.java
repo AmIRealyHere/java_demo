@@ -36,8 +36,9 @@ public class Patient implements Comparable<Patient>{
     public int compareTo(Patient o) {
         if (getSeverityScore()> o.getSeverityScore()) return 1;
         else if (getSeverityScore()<o.getSeverityScore()) return -1;
-//        else if (getAge()> o.getAge()) return 1;
-//        else if (getAge()< o.getAge()) return -1;
-        return 0;
+//         if (getAge()> o.getAge()) return 1;
+//         if (getAge()< o.getAge()) return -1;
+//        return 0;
+        return Integer.compare(getAge(), o.getAge());
     }
 }
